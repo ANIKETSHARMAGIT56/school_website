@@ -1,0 +1,108 @@
+body{
+    --navbar-height : 6rem;
+    margin: 0;
+    padding: 0;
+    // height: 100vh;
+    // width: 100vw;
+}
+*{
+    // color-scheme: dark;
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    // outline: 1px solid black;
+}
+nav{
+    z-index: 1;
+    height: var(--navbar-height);
+    width: 100%;
+    display: flex;
+    // position:fixed;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    border-bottom: 1px solid black;
+    // background-color:beige;
+    img{
+        margin: auto;
+        margin-left: 0;
+        justify-self: left;
+        height: 2rem;
+    }
+    ul{
+        gap: 2rem;
+        // width: 50%;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        display: flex;
+        li{
+            width:max-content;
+        }
+    }
+}
+section#first{
+
+    background:#11b398;
+    // gap:2rem;
+    display: grid;
+    font-family: cursive;
+    height: calc(100vh - var(--navbar-height));
+    // padding-top:2rem;
+    padding-left: 1%;
+    justify-items: center;
+    background-color: rgb(255, 166, 32);
+    align-items: center;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    text-align: center;
+    img{
+        height: 40vh;
+    }
+    h1{
+        font-family: 'Quicksand', sans-serif;
+        font-size:min(4rem , 10vw);
+    }
+    h2{
+        color: rgba(0, 0, 0, 0.538);
+        font-family: 'Quicksand', sans-serif;
+        font-size:min(2rem , 4vw);
+    }
+    ul{
+        font-family:'Comic Sans';
+        align-self: flex-start;
+        font-size: 2vw;
+        list-style-type:none;
+        justify-self: baseline;
+    }
+}
+section#second{
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 5rem;
+    >h1{
+        font-size:min(4rem , 10vw);
+    }
+    .card{
+        padding-top: 5rem;
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        h1{
+
+        }
+    }
+}
+
+@media all and (max-width: 500px){
+    section{
+        justify-content: center;
+    }
+}

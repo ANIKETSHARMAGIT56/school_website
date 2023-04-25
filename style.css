@@ -1,0 +1,99 @@
+body {
+  --navbar-height: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  z-index: 1;
+  height: var(--navbar-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  border-bottom: 1px solid black;
+}
+nav img {
+  margin: auto;
+  margin-left: 0;
+  justify-self: left;
+  height: 2rem;
+}
+nav ul {
+  gap: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+section#first {
+  background: #11b398;
+  display: grid;
+  font-family: cursive;
+  height: calc(100vh - var(--navbar-height));
+  padding-left: 1%;
+  justify-items: center;
+  background-color: rgb(255, 166, 32);
+  align-items: center;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+section#first img {
+  height: 40vh;
+}
+section#first h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: min(4rem, 10vw);
+}
+section#first h2 {
+  color: rgba(0, 0, 0, 0.538);
+  font-family: "Quicksand", sans-serif;
+  font-size: min(2rem, 4vw);
+}
+section#first ul {
+  font-family: "Comic Sans";
+  align-self: flex-start;
+  font-size: 2vw;
+  list-style-type: none;
+  justify-self: baseline;
+}
+
+section#second {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+section#second > h1 {
+  font-size: min(4rem, 10vw);
+}
+section#second .card {
+  padding-top: 5rem;
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+}
+@media all and (max-width: 500px) {
+  section {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
