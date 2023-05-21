@@ -89,12 +89,13 @@ section#second {
   width: 100vw;
   text-align: center;
   padding-bottom: 5rem;
+  background: linear-gradient(to left, #40b3a2, #85cdca);
 }
 section#second > h1 {
   font-size: min(4rem, 10vw);
 }
 section#second .card {
-  background-color: rgba(23, 155, 175, 0.3725490196);
+  background: #85cdca;
   text-align: left;
   min-height: 50vh;
   padding-left: 2rem;
@@ -135,6 +136,38 @@ section#second .card p {
   font-size: min(1rem, 6vw);
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+section#third {
+  background: url(assets/image1.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.655);
+  background-blend-mode: darken;
+  background-position: center;
+  width: 100vw;
+  color: white;
+  height: 80vh;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  justify-content: space-around;
+  text-align: left;
+}
+
+section#quote {
+  height: 50vh;
+  font-size: min(3rem, 7vw);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-inline: 2rem;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
 }
 
 @media all and (max-width: 750px) {
